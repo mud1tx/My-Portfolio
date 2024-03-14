@@ -7,13 +7,13 @@ const MainPage = () => {
   const [animationCompleted, setAnimationCompleted] = useState<boolean>(false);
 
   return (
-    <div className="h-screen flex justify-center items-center relative overflow-hidden">
+    <div className="h-screen flex justify-center items-center relative">
       <Welcome
         animationCompleted={animationCompleted}
         setAnimationCompleted={setAnimationCompleted}
       />
       {animationCompleted && (
-        <div className="absolute top-0 left-0 w-full h-full opacity-1">
+        <div className="w-full h-full">
           <HomePage />
         </div>
       )}

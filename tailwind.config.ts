@@ -12,6 +12,12 @@ const config: Config = {
         primaryBlack: "#0e100f",
         primaryCream: "#FFFFE3",
         primaryBorder: "#323228",
+        primaryPurple: "#A374FF",
+        primaryOrange: "#FFD074",
+        primaryCyan: "#17F1D1",
+        primaryBlackCard: "#191917",
+        primaryPink: "#FEC5FB",
+        primaryDarkOrange: "#FF8709",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

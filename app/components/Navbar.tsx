@@ -6,25 +6,25 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const router = useRouter();
-  const [isOpen, setIsOpen] = useState(false);
-  const NavBarData = [
-    { id: "1", name: "Home", url: "/" },
-    { id: "2", name: "About Me", url: "/about" },
-    { id: "3", name: "Contact", url: "/contact" },
-  ];
+  // const [isOpen, setIsOpen] = useState(false);
+  // const NavBarData = [
+  //   { id: "1", name: "Home", url: "/" },
+  //   { id: "2", name: "About Me", url: "/about" },
+  //   { id: "3", name: "Contact", url: "/contact" },
+  // ];
 
-  const handleNavigation = (url: string) => {
-    router.push(url);
-    setIsOpen(false);
-  };
+  // const handleNavigation = (url: string) => {
+  //   router.push(url);
+  //   setIsOpen(false);
+  // };
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleDropdown = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
-  const closeDropdown = () => {
-    setIsOpen(false);
-  };
+  // const closeDropdown = () => {
+  //   setIsOpen(false);
+  // };
 
   return (
     <div className="relative">
@@ -32,20 +32,20 @@ const Navbar = () => {
         <div className="h-full flex items-center ml-4 mr-4 p-2 justify-between text-2xl font-medium">
           <div
             className="flex items-center gap-2 border border-primaryBorder rounded-3xl px-3 py-2"
-            onClick={toggleDropdown}
+            // onClick={toggleDropdown  }
           >
             <div className="w-4 h-4 rounded-3xl bg-primaryCream"></div>
             <div>mud1tx</div>
           </div>
-          <div
+          {/* <div
             className="p-2 border border-primaryBorder rounded-3xl cursor-pointer"
             onClick={toggleDropdown}
           >
             <GiHamburgerMenu />
-          </div>
+          </div> */}
         </div>
       </div>
-      {isOpen && (
+      {/* {isOpen && (
         <motion.div
           className="fixed top-0 left-0 w-screen h-screen bg-black opacity-50 z-40"
           onClick={closeDropdown}
@@ -74,7 +74,7 @@ const Navbar = () => {
             ))}
           </ul>
         </motion.div>
-      )}
+      )} */}
     </div>
   );
 };

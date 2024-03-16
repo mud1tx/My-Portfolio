@@ -18,6 +18,7 @@ const config: Config = {
         primaryBlackCard: "#191917",
         primaryPink: "#FEC5FB",
         primaryDarkOrange: "#FF8709",
+        primaryBlue: "#00B5CF",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

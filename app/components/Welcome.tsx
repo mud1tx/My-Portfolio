@@ -13,16 +13,15 @@ const Welcome: React.FC<WelcomeProps> = ({
 }) => {
   const [welcomeMessage, setWelcomeMessage] = useState<string>("");
   const [index, setIndex] = useState<number>(0);
-  // const [animationCompleted, setAnimationCompleted] = useState<boolean>(false);
 
   const languages: string[] = [
     "Hello",
     "Bonjour",
     "Ciao",
-    "Hallo",
+    "안녕하세요",
+    "Olá",
     "你好 ",
     "こんにちは ",
-    "مرحبا",
     "Hola",
     "नमस्ते ",
   ];
